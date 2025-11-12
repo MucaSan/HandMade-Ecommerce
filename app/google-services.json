@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24252046277",
+    "project_id": "handmade-ecommerce-fatec",
+    "storage_bucket": "handmade-ecommerce-fatec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24252046277:android:f299f239f558910ebc09ac",
+        "android_client_info": {
+          "package_name": "com.example.handmadeecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR_2EtFdwlRVIRYGXSG5U8GNVoz78K6VE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
