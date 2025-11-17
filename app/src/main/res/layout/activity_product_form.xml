@@ -32,7 +32,7 @@
         android:hint="Nome do Produto">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/product_name_edittext"
+            android:id="@+id/txtProductName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapSentences" />
@@ -48,7 +48,7 @@
         android:hint="Preço">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/product_value_edittext"
+            android:id="@+id/txtProductPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal" />
@@ -64,7 +64,7 @@
         android:hint="Descrição">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/product_description_edittext"
+            android:id="@+id/txtProductDescription"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:gravity="top"
@@ -81,7 +81,7 @@
         android:hint="Imagem do Produto">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/product_image_edittext"
+            android:id="@+id/txtImageProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textUri" />
@@ -89,12 +89,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/action_button"
+        android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:padding="14dp"
-        tools:text="Add Product"
+        tools:text="Adicionar Produto"
         android:textAppearance="?attr/textAppearanceLabelLarge"
         android:textStyle="bold"
         app:backgroundTint="#FF9800"
