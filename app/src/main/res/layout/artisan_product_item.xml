@@ -28,7 +28,7 @@
                 android:textAppearance="?attr/textAppearanceBodyMedium" />
 
             <TextView
-                android:id="@+id/product_name"
+                android:id="@+id/productName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -44,7 +44,7 @@
                 android:layout_marginStart="16dp" />
 
             <TextView
-                android:id="@+id/product_value"
+                android:id="@+id/productValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?attr/textAppearanceBodyMedium"
@@ -53,7 +53,7 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/product_image"
+            android:id="@+id/productImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="8dp"
@@ -71,7 +71,7 @@
             android:textAppearance="?attr/textAppearanceBodyMedium" />
 
         <TextView
-            android:id="@+id/product_description"
+            android:id="@+id/productDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -86,7 +86,7 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_edit"
+                android:id="@+id/btnEdit"
                 style="@style/Widget.Material3.Button.OutlinedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 app:strokeColor="#FF9800" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_delete"
+                android:id="@+id/btnDelete"
                 style="@style/Widget.Material3.Button.OutlinedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
