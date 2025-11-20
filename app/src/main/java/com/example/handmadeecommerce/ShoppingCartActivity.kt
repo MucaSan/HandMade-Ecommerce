@@ -13,6 +13,7 @@ import com.example.handmadeecommerce.controller.CartState
 import com.example.handmadeecommerce.controller.CartViewModel
 import com.example.handmadeecommerce.controller.CartViewModelFactory
 import com.example.handmadeecommerce.databinding.ActivityShoppingCartBinding
+import com.example.handmadeecommerce.utils.switchActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class ShoppingCartActivity : AppCompatActivity() {
@@ -40,6 +41,18 @@ class ShoppingCartActivity : AppCompatActivity() {
         setupToolbar()
         setupRecyclerView()
         setupObservers()
+
+       binding.toolbar.setOnMenuItemClickListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.menuLogout -> {
+                    (application as HandmadeEcommerceApp).auth.signOut()
+                    switchActivity(this, LandingPageActivity::class.java)
+                    finishAffinity()
+                    true
+                }
+                else -> false
+            }
+        }
 
         binding.checkoutButton.setOnClickListener {
             showConfirmationDialog()
