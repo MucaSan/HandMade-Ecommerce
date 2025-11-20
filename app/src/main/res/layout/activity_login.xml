@@ -37,7 +37,8 @@
                 android:id="@+id/txtEditEmailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColorLink="#FF9800" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,11 +49,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="Senha"
-            app:endIconMode="password_toggle"> <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtEditPasswordLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEditPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColorLink="#FF9800" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -10,4 +10,5 @@ interface ProductRepository {
     suspend fun deleteProduct(productId: String): Result<Unit>
 
     suspend fun uploadImage(imageUri: Uri): Result<String>
+    suspend fun getAllProducts(): Result<List<Product>>
 }
