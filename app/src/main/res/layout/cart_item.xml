@@ -20,8 +20,8 @@
             android:id="@+id/productImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:scaleType="centerCrop"
             android:background="@color/material_dynamic_neutral_variant90"
+            android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/hero" />
@@ -33,9 +33,9 @@
             android:layout_marginStart="12dp"
             android:textAppearance="?attr/textAppearanceTitleSmall"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/item_total_price"
             app:layout_constraintStart_toEndOf="@id/productImage"
             app:layout_constraintTop_toTopOf="@id/productImage"
-            app:layout_constraintEnd_toStartOf="@id/item_total_price"
             tools:text="Nome do Produto" />
 
         <TextView
@@ -44,17 +44,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:textAppearance="?attr/textAppearanceBodySmall"
+            app:layout_constraintEnd_toEndOf="@id/productName"
             app:layout_constraintStart_toEndOf="@id/productImage"
             app:layout_constraintTop_toBottomOf="@id/productName"
-            app:layout_constraintEnd_toEndOf="@id/productName"
             tools:text="Current ro..." />
 
         <TextView
             android:id="@+id/item_total_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="#FF9800"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/productName"
@@ -64,9 +64,9 @@
             android:id="@+id/quantity_stepper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="@id/productName"
             app:layout_constraintTop_toBottomOf="@id/product_subtitle">
 
@@ -75,9 +75,10 @@
                 style="@style/Widget.Material3.Button.OutlinedButton.Icon"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
+                android:shadowColor="#FF9800"
                 app:icon="@drawable/ic_remove"
-                app:iconPadding="0dp"
-                app:iconGravity="textStart" />
+                app:iconGravity="textStart"
+                app:iconPadding="0dp" />
 
             <TextView
                 android:id="@+id/text_quantity"
@@ -92,9 +93,13 @@
                 style="@style/Widget.Material3.Button.OutlinedButton.Icon"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
+                android:textColorHighlight="#FF9800"
+                android:textColorHint="#FF9800"
+                android:textColorLink="#FF9800"
                 app:icon="@drawable/ic_add"
+                app:iconGravity="textStart"
                 app:iconPadding="0dp"
-                app:iconGravity="textStart" />
+                app:rippleColor="#FF9800" />
 
         </LinearLayout>
 

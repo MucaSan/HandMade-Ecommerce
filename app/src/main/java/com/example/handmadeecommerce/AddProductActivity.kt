@@ -17,7 +17,6 @@ import com.example.handmadeecommerce.model.Product
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class AddProductActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityProductFormBinding
     private var selectedImageUri: Uri? = null // <-- Armazena o Uri da imagem
 

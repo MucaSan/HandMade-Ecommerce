@@ -92,4 +92,17 @@ class ProductRepositoryImpl(
             Result.failure(e)
         }
     }
+
+    override suspend fun getAllProducts(): Result<List<Product>> {
+        return try {
+            // Pega a coleção inteira de produtos
+            val snapshot = firestore.collection("product")
+                .get()
+                .await()
+            val products = snapshot.toObjects(Product::class.java)
+            Result.success(products)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
 }
